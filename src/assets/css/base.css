@@ -1,0 +1,15 @@
+body,html,div,p,ul,li,ol,span,img,a{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+ul li,ol li{
+    list-style: none;
+}
+img{
+    border: none;
+    outline: none;
+}
