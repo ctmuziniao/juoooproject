@@ -2,7 +2,7 @@ module.exports = {
     devServer : {
         proxy:{
             "/wp": {
-                target: "http://m.wpiao.cn/",
+                target: "http://wwww.wpiao.cn/",
                 changeOrigin: true,
                 pathRewrite:{
                     "^/wp": ''

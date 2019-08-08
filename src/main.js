@@ -4,7 +4,9 @@ import router from './router'
 import store from './store'
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
+import { InfiniteScroll } from 'mint-ui';
 Vue.use(MintUI)
+Vue.use(InfiniteScroll)
 Vue.config.productionTip = false
 
 new Vue({

@@ -7,27 +7,33 @@
             <ul>
                 <li>
                     <router-link to="/home/index">
-                        <img src="">
+                        <span class="fa fa-home"></span>
                         <span>首页</span>
                     </router-link>
                 </li>
                 <li>
-                    <router-link  to="cinama">
-                        <img src="">
-                        <span>剧场</span>
-                    </router-link>
+                    <div>
+                        <span class="fa fa-cc-discover"></span>
+                        <span>优惠券</span>
+                    </div>
                 </li>
                 <li>
-                    <router-link  to="/city">
-                        <img src="">
-                        <span>票夹</span>
-                    </router-link>
+                    <div>
+                        <span class="fa fa-plane"></span>
+                        <span>发布</span>
+                    </div>
                 </li>
                 <li>
-                    <router-link  to="/allList">
-                        <img src="">
+                    <div>
+                        <span class="fa fa-users"></span>
+                        <span>分销</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <span class="fa fa-user"></span>
                         <span>我的</span>
-                    </router-link>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -41,23 +47,42 @@ export default {
 </script>
 
 <style lang="scss">
-.cz-footer {
+.jc-home{
     width: 100%;
-    height: 0.98rem;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    ul {
+    height: 100%;
+    .cz-footer{
+        position: fixed;
+        bottom:0;
         width: 100%;
         height: 0.98rem;
-        display: flex;
-        li {
-            flex: 1;
-            height: 0.98rem;
-            line-height: 0.98rem;
-            text-align: center;
+        overflow: hidden;
+        ul{
+            display: flex;
+            height: 100%;
+            li{
+                width: 20%;
+                div,a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    span{
+                        text-align: center;
+                        font-size: 0.26rem;
+                        &:nth-of-type(1){
+                            font-size: 0.45rem;
+                        }
+                    }
+                }
+            }
         }
+    }
+    .cz-router{
+        height: 12.36rem;
+        overflow: auto;
     }
 }
 </style>
