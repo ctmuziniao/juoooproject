@@ -369,7 +369,7 @@ export default {
                     -webkit-line-clamp: 2;
                     -webkit-box-orient: vertical;
                     word-break: break-all;
-                    line-height: 0.38rem;;
+                    line-height: 0.38rem;
                     padding-top: 5px;
                     color: #444;
                     font-size: 0.30rem;
